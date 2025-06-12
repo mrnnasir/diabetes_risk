@@ -73,6 +73,8 @@ The project aims to develop a predictive analytics dashboard that leverages phys
 ## Project Plan
 * I used the following high-level steps for the analysis:
   1. I used Kanban board to plan the project and track progress. It's a robust tool to track the project progression, organize tasks and identify bottolenecks.
+  ![Kanban Board](images_and_wireframe/kanban_board.png)
+  
   2. Created five different notebooks for the purpose of ease of use, clarity and separation of concerns.
   3. Data Collection: Gathered the cardiovascular disease dataset from Kaggle. Used ChatGPT to calculate the diabetes risk percentage for individuals based on the cardio dataset.
   4. Data Preprocessing: Cleaned and preprocessed the data, including handling missing values and encoding categorical variables.
