@@ -167,6 +167,12 @@ I believe that the dashboard effectively communicates the insights from the anal
 
 In most cases, I used built-in visualizations in Power BI, but I also used some custom visuals like `Swarm Plot` and `Heatmap` using python script and downloaded `Box Plot` from marketplace to enhance the dashboard's functionality and provide a more comprehensive view of the data. These custom visuals allow for better representation of the data and help users gain deeper insights into the factors influencing diabetes risk.
 
+**Link for Power BI Dashboard:**
+https://app.powerbi.com/groups/me/reports/e803ffc4-cf8c-495f-8bce-2d9693a9634b/42415e9687ac60f2379c?experience=power-bi
+
+- You may need to request for an access to view the report.
+- As a back up, I have also uploaded the Dashboard to Github repository as `Diab_Risk_Cap_Proj.pbix`
+
 
 ## Unfixed Bugs
 
