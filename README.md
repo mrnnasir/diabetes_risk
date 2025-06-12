@@ -27,6 +27,17 @@ The project aims to develop a predictive analytics dashboard that leverages phys
 * **Scalability:** The solution should be scalable to handle larger datasets and potentially incorporate new data sources.
 
 
+## AB Testing
+* * ***Null Hypothesis (H<sub>0</sub>)***:
+  * Percentage of diabetes risk is the same for both groups.
+* ***Alternative Hypothesis (H<sub>1</sub>)***:
+  * Percentage of diabetes risk is higher for the group with no physical activity.
+* **Validation:**
+  * **Normality Test:** Shapiro-Wilk test indicates that the data is not normally distributed.
+  * **Mann-Whitney U Test:** The p-value is $p=0.0338$. Since the p-value is less than $0.05$, we reject the null hypothesis, indicating a significant difference in diabetes risk percentage between physically active and non-active individuals.
+* **Conclusion:** The results suggest that there is a association between physical activity and diabetes risk. The Mann-Whitney U test results provide strong evidence to reject the null hypothesis and highlight the importance of physical activity in diabetes risk reduction.
+
+
 ## Hypotheses Validation
 * In this project, I have investigated the following hypotheses to understand the associations between various factors and diabetes risk, validated primarily using Chi-square and Kruskal-Wallis tests:
 
@@ -55,6 +66,7 @@ The project aims to develop a predictive analytics dashboard that leverages phys
 * $H_1$: There is an association between `gender` and `diab_risk_cat`.
 * **Validation:** Chi-square test (Pearson's $\chi^2 = 2128.41$, $p=0.0$) and Kruskal-Wallis test ($H = 1683.07$, $p=0.0$). The very low p-values confirm a strong association, leading to the rejection of the null hypothesis.
 
+
 ## Project Plan
 * I used the following high-level steps for the analysis:
   1. I used Kanban board to plan the project and track progress. It's a robust tool to track the project progression, organize tasks and identify bottolenecks.
@@ -81,6 +93,7 @@ The project aims to develop a predictive analytics dashboard that leverages phys
 * **Communicating model performance:** Confusion matrix and classification reports, when visualized, provide a clear picture of how well the predictive model is performing in identifying each diabetes risk category.
 * **Informing clinical and public health initiatives:** Interactive dashboards allow clinicians and public health officials to explore the data, filter by different demographics, and understand the impact of various factors, aiding in targeted interventions.
 * **Promoting data-driven decision making:** By presenting complex information in an intuitive visual format, decision-makers can quickly grasp the key takeaways and make informed choices.
+
 
 ## Analysis techniques used
 
@@ -124,8 +137,10 @@ The project aims to develop a predictive analytics dashboard that leverages phys
 
 * **Generative AI Tools:** I used various generative AI tools like ChatGPT, Co-Pilot, Deepseek, Perplexity and Gemini for ideation, design thinking, code optimization and documentation. These tools helped me brainstorm ideas, generate code snippets, and optimize my code for better performance. For example, I used ChatGPT to calculate the diabetes risk percentage for individuals based on the cardio dataset in a separate notebook. I also used these tools to get suggestions for data analysis techniques, selecting best plot for visualizations, and model evaluation methods. Additionally, I used these tools to generate markdown documentation for my project, which helped me structure my thoughts and present my findings in a clear and concise manner.
 
+
 ## Ethical considerations
 * **Data Privacy:** The dataset used in this project is publicly available on Kaggle and does not contain any personally identifiable information (PII). Additionally, This dataset dataset doesn't include any sensitive or race-related information, which helps mitigate potential bias in the analysis.
+
 
 ## Dashboard Design
 * I have created single page dashboard using Power BI to visualize the insights from the analysis. The dashboard includes various visualizations like stacked bar charts, pie charts, swarm plot, box plot and scatter plot to represent the relationships between different variables and diabetes risk. The dashboard is designed to be interactive, allowing users to filter data based on different criteria like `bp_category`, `bmi_category`, `age_group`, `gender`, and `active`. This interactivity helps users explore the data and gain insights into the factors influencing diabetes risk.
@@ -161,15 +176,18 @@ In most cases, I used built-in visualizations in Power BI, but I also used some 
 - Another main challenge was to recall all I learned in the course and apply it to this project. I had to go back to LMS and review the concepts of data analysis, machine learning, and data visualization. It consumed a significant amount of time. Thanks to generative AI tools like ChatGPT, Co-Pilot, Deepseek, Perplexity and Gemini which assisted me for ideation, design thinking, code optimization and documentation.
 - I hope to continue improving my skills in data analysis and machine learning by exploring more advanced techniques and tools. In this project, I cross-validated three models. I plan to improve my skills on other machine learning models like XGBoost, LightGBM, and CatBoost in the future. I also plan to explore deep learning techniques for potentially better performance and more advanced visualization.
 
+
 ## Input
 * In the **RAW** folder, I have included 2 files
   - `cardio_data_processed.csv`: The main dataset used for the analysis.
   - `cardio_data_diabetes_risk.csv`: The dataset with diabetes risk percentage calculated using ChatGPT.
 
+
 ## Output
 * In the **OUTPUT** folder, I have included 2 files
   - cardio_data_processed_cleaned.csv: The cleaned dataset after preprocessing.
   - cardio_data_diabetes_risk_cleaned.csv: The cleaned dataset with diabetes risk percentage calculated using ChatGPT.
+
 
 ## Notebooks
 * In the **NOTEBOOKS** folder, I have included 6 notebooks
