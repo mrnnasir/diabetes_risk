@@ -1,4 +1,5 @@
 # Diabetes Risk Analysis
+![alt text](images_and_wireframe/image.png)
 
 This project aims to analyze key factors influencing diabetes risk using health, lifestyle, and demographic data. By identifying significant predictors and building machine learning models, the project helps in assessing individuals' risk levels and supports preventive healthcare efforts.
 
@@ -66,6 +67,8 @@ The project aims to develop a predictive analytics dashboard that leverages phys
 * $H_1$: There is an association between `gender` and `diab_risk_cat`.
 * **Validation:** Chi-square test (Pearson's $\chi^2 = 2128.41$, $p=0.0$) and Kruskal-Wallis test ($H = 1683.07$, $p=0.0$). The very low p-values confirm a strong association, leading to the rejection of the null hypothesis.
 
+## Wireframe
+![alt text](images_and_wireframe/wireframe.png)
 
 ## Project Plan
 * I used the following high-level steps for the analysis:
@@ -144,18 +147,19 @@ The project aims to develop a predictive analytics dashboard that leverages phys
 
 ## Dashboard Design
 * I have created single page dashboard using Power BI to visualize the insights from the analysis. The dashboard includes various visualizations like stacked bar charts, pie charts, swarm plot, box plot and scatter plot to represent the relationships between different variables and diabetes risk. The dashboard is designed to be interactive, allowing users to filter data based on different criteria like `bp_category`, `bmi_category`, `age_group`, `gender`, and `active`. This interactivity helps users explore the data and gain insights into the factors influencing diabetes risk.
+![alt text](images_and_wireframe/basic_visual.png)
 
   - I used slicers to allow users to filter the data based on different criteria like `gender`, `age_group` and `active`. This interactivity helps users explore the data and gain insights into the factors influencing diabetes risk. Slicer's filter functionality allows users to select specific categories, which dynamically updates the visualizations on the dashboard to reflect the selected data. This feature enhances user engagement and allows for a more personalized exploration of the data.
 
   - I used pie charts to represent the distribution of categorical variables like `gender`, `active` and `diabetes risk category`. Pie charts are effective for showing proportions and percentages, making it easy to understand the distribution of different categories at a glance.
 
   - I used stacked bar charts to visualize the relationship of `gender_char`, `bp_category`, `bmi__simp_cat`, `age_simp_group` with `diabetes risk category`. Stacked bar charts allow for easy comparison of multiple categories within a single bar, making it clear how different factors contribute to diabetes risk. I used this chart to visualize the distribution of `diabetes risk percentage` across `gender_char`, `active_char` and `age_group`. Stacked bar charts allow for easy comparison of multiple categories within a single bar, making it clear how different factors contribute to diabetes risk. It gives the option of drill down to see the distribution of `diabetes risk percentage` across different categories.
+  ![alt text](images_and_wireframe/hypothese.png)
 
   - I used swarm plot to visualize the distribution of `diabetes risk category` across `bmi`. Swarm plots are useful for showing the distribution of a continuous variable across different categories, providing a clear view of how `bmi` varies within each diabetes risk category. I also used scatter plot to visualize the relationship between `diabetes risk percentage` and `bmi`. Scatter plots are effective for showing the correlation between two continuous variables, allowing users to see trends and patterns in the data.
 
-  - I used box plots to visualize the distribution of `diabetes risk category` across `weight`. Box plots are effective for showing the spread and central tendency of a continuous variable, making it easy to identify outliers and understand the distribution of `weight` within each diabetes risk category.
-
   - I used a heatmap to visualize the correlation between predicted labels and actual labels of the confusion matrix for the test set. Heatmaps are useful for showing the strength of relationships between variables, making it easy to identify patterns and correlations in the data.
+  ![alt text](images_and_wireframe/predictive_model.png)
 
   - I created three cards to display the total number of high, medium and low risk individuals based on the test set predictions. Cards are effective for displaying key metrics and summary statistics, providing a quick overview of the data.
 
