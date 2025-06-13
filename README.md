@@ -1,5 +1,4 @@
 # Diabetes Risk Analysis
-![alt text](images_and_wireframe/image.png)
 
 This project aims to analyze key factors influencing diabetes risk using health, lifestyle, and demographic data. By identifying significant predictors and building machine learning models, the project helps in assessing individuals' risk levels and supports preventive healthcare efforts.
 
